@@ -36,6 +36,7 @@ def add_student(student_list):
         print("输入无效，请重新输入")
         return
     student_list.append(Student(name, score))
+    save_data(student_list)
 
 def show_students(student_list):
     if len(student_list) == 0:
